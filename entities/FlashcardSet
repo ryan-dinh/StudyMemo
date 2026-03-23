@@ -1,0 +1,57 @@
+{
+  "name": "FlashcardSet",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "folder_id": {
+      "type": "string",
+      "description": "ID of parent folder, empty = root"
+    },
+    "card_count": {
+      "type": "number",
+      "default": 0
+    },
+    "is_public": {
+      "type": "boolean",
+      "default": false
+    },
+    "share_code": {
+      "type": "string",
+      "description": "Unique code for sharing"
+    },
+    "total_studied": {
+      "type": "number",
+      "default": 0
+    },
+    "best_score": {
+      "type": "number",
+      "default": 0
+    },
+    "last_studied": {
+      "type": "string"
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "color": {
+      "type": "string",
+      "default": "auto",
+      "description": "Color label: auto, blue, violet, emerald, amber, rose, cyan, indigo, pink"
+    },
+    "pinned": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "required": [
+    "title"
+  ]
+}

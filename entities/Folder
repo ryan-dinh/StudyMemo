@@ -1,0 +1,24 @@
+{
+  "name": "Folder",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "parent_id": {
+      "type": "string",
+      "description": "Parent folder ID for nesting, empty = root"
+    },
+    "color": {
+      "type": "string",
+      "default": "blue"
+    },
+    "icon": {
+      "type": "string",
+      "default": "folder"
+    }
+  },
+  "required": [
+    "name"
+  ]
+}

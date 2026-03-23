@@ -1,0 +1,37 @@
+{
+  "name": "FolderShare",
+  "type": "object",
+  "properties": {
+    "folder_id": {
+      "type": "string",
+      "description": "ID of the shared folder"
+    },
+    "shared_with_email": {
+      "type": "string",
+      "description": "Email of the person who has access"
+    },
+    "role": {
+      "type": "string",
+      "enum": [
+        "viewer",
+        "editor"
+      ],
+      "default": "viewer",
+      "description": "viewer = read-only, editor = can add sets"
+    },
+    "owner_email": {
+      "type": "string",
+      "description": "Email of the folder owner"
+    },
+    "folder_name": {
+      "type": "string",
+      "description": "Cached folder name for display"
+    }
+  },
+  "required": [
+    "folder_id",
+    "shared_with_email",
+    "role",
+    "owner_email"
+  ]
+}

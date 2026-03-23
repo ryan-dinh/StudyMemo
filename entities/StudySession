@@ -1,0 +1,46 @@
+{
+  "name": "StudySession",
+  "type": "object",
+  "properties": {
+    "set_id": {
+      "type": "string"
+    },
+    "mode": {
+      "type": "string",
+      "enum": [
+        "flashcard",
+        "spaced",
+        "test_multiple",
+        "test_typed"
+      ]
+    },
+    "total_cards": {
+      "type": "number",
+      "default": 0
+    },
+    "correct": {
+      "type": "number",
+      "default": 0
+    },
+    "incorrect": {
+      "type": "number",
+      "default": 0
+    },
+    "duration_seconds": {
+      "type": "number",
+      "default": 0
+    },
+    "completed": {
+      "type": "boolean",
+      "default": false
+    },
+    "score_pct": {
+      "type": "number",
+      "default": 0
+    }
+  },
+  "required": [
+    "set_id",
+    "mode"
+  ]
+}
